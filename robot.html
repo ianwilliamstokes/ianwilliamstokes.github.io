@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>My Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">My Portfolio</a></h1>
+
+						<header>
+							<p>Ian Stokes, BS Mechanical Engineering 2020</p>
+						</header>
+					<!-- Banner -->
+						<header>
+							<h2>This portoflio is intended to highlight my experience and projects in mechnical engineering and beyond. It is separated into three catergories: academic projects, extracurricular projects, and fine woodworking. Please look to my linkedin for more information.</h2>
+						</header>
+
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Bio</a></li>
+							<li><a href="left-sidebar.html">Academic Projects</a></li>
+							<li class="current"><a href="right-sidebar.html">Extracurricular Projects</a></li>
+							<li><a href="no-sidebar.html">Fine Woodworking</a></li>
+						</ul>
+					</nav>	
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+                                <article class="box post">
+
+                                    <header class="major">
+                                        <h2>Autonomous Robot Competition</h2>
+                                    </header>
+                            
+                                    <p>
+                                        In the Spring of 2019, I participated in the Northwestern University Autonomous Robotics Competition on a team with two others.
+                                        The prompt for the projec t required us to build a robot to be controlled by our team that could sense and collect tokens in random
+                                        locations on a game board without our teams being able to see the robot or the board. Each of four tokens needed to be collected and removed
+                                        from the board before another team's robot did the same in a head to head competition. The tokens were covered in reflective tape and were of
+                                        a variety of sizes from above, specifically 2x2 inches, 2x4, 2x6, and 2x8. There were holes in the tops of the tokens at 2 inch intervals.
+                                        These holes were intended to be used by our robots to collect and remove the tokens.
+                                    </p>
+                                    <p>
+                                        The strategy we used for the competition involved solving several robotics problems:
+                                        being able to determine where the robot is on the game board, sensing barriers and
+                                        tokens on the game board, navigating the game board, and collecting and disposing of
+                                        tokens.
+                                        For determining where the robot is on the game board and sensing barriers and tokens,
+                                        we used the simplest setup of sensors possible. We wanted to do three things:
+                                        determine where the robot is in space using vive sensors for positioning, sense objects
+                                        in front of the robot using the time of flight sensor, and determine whether the object is a
+                                        token or a barrier using a laser and phototransistor setup. The circuit design for the hardware is shown in the first image on the right.
+                                        Our strategy for navigating the game board involved the shape and driving mechanism
+                                        of our robot. We wanted to make the robot as compact as possible so it would fit
+                                        between and into the corners of the barriers. To do this, we made the robot 7”x7”. We
+                                        then drove the robot with differential drive from two motors and a ball bearing dummy
+                                        wheel used for stability.
+                                    </p>
+                                    <p>
+                                        For the collection of tokens, a claw design that made use of the holes in the tops of the
+                                        tokens was used. It is shown in the second image on the right. The robot was also designed
+                                        to be level to the ground and have a low
+                                        center of gravity to make the grabbing of the tokens easier. 
+                                        The claw was the most involved aspect of our mechanical design and what I cfocused most of my time on.
+                                        We wanted it to work on any size token, with the token being placed anywhere on the game board, and with
+                                        the robot approaching the token at any angle. To do this, we focused on grabbing the
+                                        holes on top of the tokens because every size token had the same size holes. The
+                                        design we came up with was similar to a pin impression children’s toy with many plastic
+                                        robs that can be pressed up through a board of holes.
+                                        The design we came up with used only three pins that could be pressed upwards but
+                                        held down with springs. This is shown in the third image on the right. They were spaced out just enough so that only one pin would
+                                        go into the hole in the token while the others were pressed upwards. This gave us a
+                                        much higher chance of hitting a hole in the token than with one pin. The final claw
+                                        design with two of its pins being pressed up with one down is shown in the figure below.
+                                        The arm of the claw was then designed to be long enough to reach into the corner of a
+                                        barrier to grab a token. A servo was used to operate this claw and was positioned on
+                                        the top level of the robot chassis. This was done such that as the claw came down to
+                                        grab a token, the rods would be exactly perpendicular to the game board table when
+                                        they came into contact with the token holes. This was to ensure that the rods would not
+                                        come in at an angle to the holes, reducing the chance of grabbing the token.
+                                    </p>
+                                    <p>
+                                        Th final robot is shown in the image below. I learned a great deal about robotics desing for this project along
+                                        woth laser cutting skills for the chassis manufacturing and 3D printing for the wheels and servo mount. Programming
+                                        the robot and wiring the sensors were also new skills that I had to develop for the competition.
+                                    </p>
+                                    <section>
+                                        <header>
+                                        </header>
+                                        <a class="image featured"><img src="images/portfolio/Robot Design Competition/side.JPG" alt="" /></a>
+                                    </section>
+                                    <footer>
+                                        <ul class="actions">
+                                            <li><a href="right-sidebar.html" class="button alt">More Projects</a></li>
+                                        </ul>
+                                    </footer>
+                                </article>
+
+                            </div>
+
+							<div class="col-4 col-12-medium">
+                                
+								<!-- Sidebar -->
+                                <section class="box">
+                                    <a class="image featured"><img src="images/portfolio/Robot Design Competition/circuit.png" alt="" /></a>
+                                    Curcuit design for the sensors and motors
+                                </section>
+
+                                <section class="box">
+                                    <a class="image featured"><img src="images/portfolio/Robot Design Competition/close.JPG" alt="" /></a>
+                                    The arm and claw of the robot
+                                </section>
+
+                                <section class="box">
+                                    <a class="image featured"><img src="images/portfolio/Robot Design Competition/head.JPG" alt="" /></a>
+                                    Close up of the claw showing its three spring loaded teeth in action
+                                </section>
+                            </div>
+                        </div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<div class="row">
+							<section>
+								<header>
+									<h2>Contact Information</h2>
+								</header>
+								<ul class="social">
+									<li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/ian-stokes/"><span class="label">LinkedIn</span></a></li>
+								</ul>
+								<ul class="contact">
+									<li>
+										<h3>Mail</h3>
+										<p><a href="#">ianstokes2020@u.northwestern.edu</a></p>
+									</li>
+									<li>
+										<h3>Address</h3>
+										<p>
+											Ian Stokes<br />
+											3220 County Road 100<br />
+											Carbondale, CO 81623
+										</p>
+									</li>
+								</ul>
+							</section>
+						
+						<div class="col-12">
+
+							<!-- Copyright -->
+								<div id="copyright">
+									<ul class="links">
+										<li>&copy; Ianstokes. All rights reserved.</li><li>Design: Ian Stokes</li>
+									</ul>
+								</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
